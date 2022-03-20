@@ -1,0 +1,408 @@
+/*================Common Css==============*/
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a:hover{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+}
+/*=====================Common Css=====================*/
+/*======================Header part Start====================*/
+
+#header{
+    background-color: #f6f9f9;
+}
+#header .logo{
+    margin-top:10px;
+}
+#header .menu{
+   padding: 15px;
+}
+#header .menu ul li{
+   position: relative; 
+   margin: 5px;
+   
+}
+#header .menu ul li::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    left: 0;
+    background-color: #e67e22;
+    bottom: 0;
+    position: absolute;
+    transform: scale(0.0);
+    transition: .5s;
+}
+#header .menu ul li a{
+    padding: 20px 20px;
+    color: #2d3950;
+    font-family:'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    transition: .5s;
+}
+#header .menu ul li:hover::before{
+    transform: scale(1,1);
+    color: #ecfd01;
+    
+}   
+/*======================Header part End====================*/
+/*======================Banner part start====================*/
+#banner{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 60px;
+    
+}
+#banner .banner_text h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+#banner .banner_text p{
+    color: #fff;
+    font-size: 13px;
+    border-top: 2px solid #15a4fa;
+    padding-top: 20px;
+    display: inline-block;
+    margin-bottom: 50px;
+    
+}
+#banner .banner_button a{
+    color: #fff;
+    border: 1px solid #15a4fa;
+    padding: 10px 15px;
+    border-radius: 2px;
+    transition: .5s;-
+}
+#banner .banner_button a:hover{
+    background-color: #15a4fa;
+    border-radius: 2px;
+}
+#banner .banner_button i{
+    display: block;
+    margin-top: 150px;
+    color: #fff;
+
+}
+/*======================Banner part End====================*/
+/*======================Simple part Start====================*/
+.main{
+    background-color: #f1f3f3;
+    padding: 50px;
+    text-align: center;
+}
+.main .main_title h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900px;
+    font-size: 30px;
+    margin-bottom:20px
+}
+.main .main_text p{
+    width: 920px;
+    margin: 0 auto;
+    color:#797272 ;
+    font-size: 14px;
+    font-weight: 600;
+}
+/*======================Simple part End====================*/
+.banner{
+    position: relative;
+    margin-bottom: 1200px;
+    margin-top: 180px;
+}
+.green{
+    height: 20px;
+    width:20px;
+    margin-left: 120px;
+    position: absolute;
+    bottom: 32px;
+}
+.yellow{
+    height: 43px;
+    width: 43px;
+    margin-top: 22px;
+    position: absolute;
+    margin-left: 1050px;
+}
+.banner_main{
+    position: absolute;
+}
+.main_head h3{
+    margin-left: 190px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+}
+.main_pera p{
+    width: 70%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #777;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.main_btn{
+    display: flex;
+    margin-left: 350px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.apple_btn a{
+    margin-right: 18px;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #ff556e;
+    border-radius: 30px;
+    padding: 12px 37px;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #ff556e;
+    transition: .3s;
+}
+.and_btn a i{
+    padding-right: 8px;
+}
+.apple_btn a i{
+    padding-right: 8px;
+}
+.and_btn a{
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #ff556e;
+    border-radius: 30px;
+    padding: 12px 37px;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #ff556e
+    
+}
+.apple_btn a:hover{
+    border: 2px solid #ff556e;
+    color: #ff556e;
+    background-color: #f7fafd;
+    
+}
+.and_btn a:hover{
+    border: 2px solid #ff556e;
+    color: #ff556e;
+    background-color: #f7fafd;
+    transition: .3s;
+}
+.white_circle1 .circle img{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    top: 90px;
+    right: -290px;
+    
+}
+.white_circle2 .circle img{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    top: 90px;
+    left: -280px;
+    
+}
+.white_circle2 .blue_circle img{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 300px;
+    left: 170px;
+
+}
+.phone img{
+    height: 600px;
+    margin-top: 310px;
+    position: absolute;
+    margin-left: 100px;
+}
+.banner_text h3{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    border-bottom: 2px solid #15a4fa;
+    display: inline-block;
+    margin-left: 400px;
+    padding-bottom: 20px;
+}
+/*======================ICON part Start====================*/
+#icon{
+    padding: 80px 0;
+    background-color: #fff;   
+}
+#icon .icon_part{
+    text-align: center;
+    display: flex; 
+    margin: 0 auto;
+}
+#icon .icon_part .icon_content .icon_img{
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    background: linear-gradient(to right,#48baff 50%, #5fc3ff 50%);
+    color: #fff;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;   
+}
+#icon .icon_part .icon_content .icon_text h4{
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+}
+#icon .icon_part .icon_content .icon_text p{
+    font-size: 11px;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    width: 250px;
+    margin: 0 auto;
+}
+/*======================ICON part End====================*/
+/*======================Showcase part Start====================*/
+#showcase{
+    background-color: #f6f9f9;
+    padding: 100px 20px;
+}
+#showcase .showcase_title{
+   text-align: center;
+   margin-bottom: 30px;
+}
+#showcase .showcase_title p{
+    font-size: 12px;
+}
+#showcase  .showcase_img{
+    position: relative;
+    margin-bottom: 30px;
+}
+#showcase .showcase_img .overlay{
+    background-color: rgba(16, 164, 250, 0.815);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s;
+}
+#showcase .showcase_img .overlay ul{
+    display: flex;
+    color: #fff;
+    
+}
+#showcase .showcase_img .overlay ul li i{
+    margin-right: 15px;
+    border: 1px solid #fff;
+    padding: 10px 10px;
+    border-radius: 2px;
+}
+#showcase .showcase_img:hover .overlay{
+    opacity: 1;
+    width: 100%;
+}
+/*======================Showcase part End====================*/
+/*======================Last part start====================*/
+#contact{ 
+    background-image: url(../images/footer-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    
+}
+#contact .contact_title{
+   text-align: center;
+   margin-bottom: 30px;
+   color: #fff;
+}
+#contact .contact_title p{
+    font-size: 12px;
+}
+#contact .overlay{
+  background-color: rgba(45, 57, 80, .9);
+  padding: 100px 20px;
+  
+}
+#contact .contact_form .form-group input,
+#contact .contact_form .form-group textarea{
+    background-color: transparent;
+    border: 1px solid #999999;
+    color: white;
+}
+#contact .contact_form .form_bottom{
+    overflow: hidden;
+}
+#contact .contact_form .form_bottom .form_left{
+    float: left;
+    color: #fff;
+}
+#contact .contact_form .form_bottom .form_right button{
+    border: 1px solid #15a4fa;
+    padding: 2px 28px;
+    border-radius: 2px;
+    color: #fff;
+    transition: .5s;
+    float: right;
+    background-color:#2d3950;
+}
+#contact .contact_form .form_bottom .form_right button:hover{
+    background-color: #15a4fa;
+    border-radius: 2px;
+}
+/*======================Last part End====================*/
+/*======================Footer Part Start====================*/
+#footer{
+    overflow: hidden;
+    padding: 20px 0;
+    
+}
+#footer .footer_text p{
+    margin-top: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+#footer .footer_link{
+    display: block;
+}
+#footer .footer_link a{
+    float: right;
+    border: 1px solid;
+    margin-right: 10px;
+    padding: 6px 9px;
+    margin-top: 5px;
+    background-color: #15a4fa;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    
+}
+/*======================Footer Part End====================*/
